@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import AddNewTask from "./NewTaskForm.js"
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <header>
+      <h1>Things To Do:</h1>
+      <button>Add New Task</button>
+      <AddNewTask />
+    </header>
+    <div class="to-do-list">
+      { /* To-Do-Items GO HERE */}
     </div>
-  );
+    </>
+  )
 }
 
 export default App;
